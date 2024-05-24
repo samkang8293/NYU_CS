@@ -1,0 +1,10 @@
+{{#if error}}
+{{error}}
+{{/if}}
+
+<form method="POST" action="/movies/add">
+    <input type="text" name="title" placeholder="title" value="">
+    <input type="text" name="director" placeholder="director" value="">
+    <input type="number" name="year" placeholder="year" value="">
+    <input type="submit" value="add movie">
+</form>

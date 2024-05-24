@@ -1,0 +1,33 @@
+{{#if cats}}
+we haz cats
+{{/if}}
+
+props as loop variable
+<form method="GET">
+        <input type="number" name="minLives" placeholder="min num lives">
+        <input type="submit" value="filter">
+</form>
+<ul>
+        {{#each cats}}
+        <li>{{name}} has {{lives}}</li>
+        {{/each}}
+</ul>
+
+with explicit loop variable
+<ul>
+        {{#each cats as |c|}}
+        <li>{{c.name}} has {{c.lives}}</li>
+        {{/each}}
+</ul>
+
+with this
+<ul>
+        {{#each cats}}
+        <li>{{this.name}} has {{this.lives}}</li>
+        {{/each}}
+</ul>
+
+<form method="POST">
+        <input type="text" name="name" placeholder="name">
+        <input type="number" name="minLives" placeholder="lives">
+</form>

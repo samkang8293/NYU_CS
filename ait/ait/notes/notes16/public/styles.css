@@ -1,0 +1,9 @@
+.done {
+    color: #aaa;
+}
+ul {
+    border: 1px solid red;
+}
+li {
+    border: 1px dashed green;
+}

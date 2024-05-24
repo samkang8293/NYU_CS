@@ -1,0 +1,15 @@
+<h1>The Complaining Commuter</h1>
+<form method="POST" action="/complaints/add">
+    Line: <select name="Line">
+        <option value="F">F</option>
+        <option value="C">C</option>
+        <option value="R">R</option>
+    </select>
+
+    <textarea name="complaintText" placeholder="complaint text">{{body}}</textarea>
+    delay <input type="checkbox" name="cats" value="delay">
+    cleanliness <input type="checkbox" name="cats" value="cleanliness">
+    safety <input type="checkbox" name="cats" value="safety">
+
+    <input type="submit" value="Complain!">
+</form>
